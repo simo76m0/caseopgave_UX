@@ -1,24 +1,26 @@
     
-    header {
-        background-color: #F9EEE8;
-        padding: 5px;
-    }
-    
-    nav a {
-        text-decoration: none;
-        color: black;
-        font-family: "orpheuspro", serif;
-        font-weight: 400;
-        font-style: normal;
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: "orpheuspro", serif;
+    font-weight: 400;
+    font-style: normal;
     }
 
-    nav li {
-        list-style: none;
+nav li {
+    list-style: none;
     }
     
-    nav ul {
-      display: flex;
-      justify-content: space-between;
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    background-color:  #F9EEE8;
+    padding: 5px;
   }
 
+  p {
+    font-family: "cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
   
