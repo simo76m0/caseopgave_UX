@@ -1,4 +1,8 @@
     
+header {
+    background-image: "../public/imgs/9a0d0283c43397c0477e97f6302ee528.jpg";
+}
+
 nav a {
     text-decoration: none;
     color: black;
@@ -6,6 +10,10 @@ nav a {
     font-weight: 400;
     font-style: normal;
     }
+
+nav img {
+    position: absolute;
+}
 
 nav li {
     list-style: none;
