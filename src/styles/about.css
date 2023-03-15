@@ -6,8 +6,27 @@
 form {
     display: flex;
     flex-direction: column;
+    font-family: "cardo", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.about h2 {
+.grid_2_1 form {
+    background-color: #F4DFDE;
+    padding: 20px;
+}
+
+.grid_2_1 label {
+    font-size: larger;
+    color: grey;
+    padding: 5px;
+}
+
+.grid_2_1 input {
+    height: 50px;
+}
+
+.about {
     text-align: right;
+    font-size: xx-large
 }
