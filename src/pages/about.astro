@@ -1,6 +1,8 @@
 ---
 import "../styles/main.css";
+import "../styles/about.css";
 import Navigation from "../components/Navigation.astro";
+import ImgTextCard from "../components/ImgTextCard.astro";
 ---
 
 <html lang="en">
@@ -18,5 +20,21 @@ import Navigation from "../components/Navigation.astro";
 		<header>
 			<Navigation />
 		</header>
+	<main>
+		<h2>WHAT IS THE PURPOSE OF SAKURA FESTIVAL?</h2>
+		<ImgTextCard text="The Committee of the Copenhagen Sakura Festival was established in February, 2008 to arrange the cultural event Copenhagen Sakura Festival with the help of the Japanese Embassy in Denmark, the Municipality of Copenhagen and other Japan-related cultural and private organizations." img="../public/imgs/acc2117809309e95ccd7d5bd4f63b9cb.jpg"/>
+		<h2 class="about">Want to know more? Get in touch!</h2>
+		<section class="grid_2_1">
+			<form>
+ 			<label for="fname">Full name</label><br>
+  			<input type="text" id="fname" name="fname"><br>
+  			<label for="phone">Phone number</label><br>
+  			<input type="tel" id="phone" name="phone">
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email">
+			</form>
+			<img src="../public/imgs/pic.jpg" alt="">
+		</section>
+	</main>
 	</body>
 </html>
