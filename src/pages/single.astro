@@ -1,6 +1,8 @@
 ---
 import "../styles/main.css";
 import Navigation from "../components/Navigation.astro";
+import Card from "../components/Card.astro";
+import Shelf from "../components/Shelf.astro";
 ---
 
 <html lang="en">
@@ -12,11 +14,19 @@ import Navigation from "../components/Navigation.astro";
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="https://use.typekit.net/aqy4phb.css" />
     <link rel="stylesheet" href="https://use.typekit.net/aqy4phb.css" />
-    <title>Astro</title>
+    <title>Home</title>
   </head>
+
   <body>
     <header>
       <Navigation />
     </header>
+    <main>
+      <Shelf title="Focus">
+        <Card < Shelf />
+      </Shelf>
+    </main>
+
+    <style></style>
   </body>
 </html>

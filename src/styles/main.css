@@ -1,34 +1,36 @@
-    
 header {
-    background-image: "../public/imgs/9a0d0283c43397c0477e97f6302ee528.jpg";
+  background-image: "../public/imgs/9a0d0283c43397c0477e97f6302ee528.jpg";
 }
 
 nav a {
-    text-decoration: none;
-    color: black;
-    font-family: "orpheuspro", serif;
-    font-weight: 400;
-    font-style: normal;
-    }
+  text-decoration: none;
+  color: black;
+  font-family: "orpheuspro", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 nav img {
-    position: absolute;
+  position: absolute;
 }
 
 nav li {
-    list-style: none;
-    }
-    
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    background-color:  #F9EEE8;
-    padding: 5px;
-  }
+  list-style: none;
+}
 
-  p {
-    font-family: "cardo", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9eee8;
+  padding: 5px;
+}
+
+p {
+  font-family: "cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  background-color: #f9eee8;
+}
