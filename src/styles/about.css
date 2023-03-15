@@ -1,0 +1,13 @@
+.grid_2_1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.about h2 {
+    text-align: right;
+}
