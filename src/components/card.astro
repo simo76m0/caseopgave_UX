@@ -3,12 +3,8 @@
 
 <li>
   <article class="grid">
-    <img src='..public/imgs/pic1.jpg"' alt="" height="350" width="350" />
-    <img src="..public/imgs/pic1.jpg" alt="" height="350" width="350" />
-    <img src="..public/imgs/pic1.jpg" alt="" height="350" width="350" />
-    <img src="..public/imgs/pic1.jpg" alt="" height="350" width="350" />
-
-    <div>
+    <img src="../public/imgs/pic3.jpg" alt="" />
+    <div class="tekst">
       <h3>KOTO & SHAKUHACHI</h3>
       <h3>青龍窯 椀形茶碗</h3>
       <p>
@@ -18,11 +14,22 @@
       </p>
     </div>
   </article>
+  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
+  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
+  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
 </li>
 
 <style>
-  grid {
+  .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .tekst {
+    background-color: #710000;
+    color: white;
+    padding: 10%;
+    margin: 10%;
   }
 </style>
