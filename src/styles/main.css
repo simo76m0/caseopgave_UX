@@ -25,6 +25,20 @@ nav ul {
   padding: 5px;
 }
 
+<<<<<<< HEAD
+  p {
+    font-family: "cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  h1, h2, h3 {
+    font-family: "orpheuspro", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+=======
 p {
   font-family: "cardo", serif;
   font-weight: 400;
@@ -34,3 +48,4 @@ p {
 main {
   background-color: #f9eee8;
 }
+>>>>>>> 733175bb4774489cc306363dba2e3dfb7191dde6
