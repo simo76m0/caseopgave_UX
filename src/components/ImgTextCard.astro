@@ -1,0 +1,23 @@
+---
+const {img, text} = Astro.props;
+---
+
+<section class="grid_1_2">
+    <img src="{img}" alt="">
+    <p>{text}</p>
+</section>
+
+
+<style>
+.grid_1_2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    }
+
+.grid_1_2 p {
+    background-color: #710000;
+    color: white;
+    padding: 25px;
+    }
+
+</style>
