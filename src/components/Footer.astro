@@ -5,30 +5,40 @@
   <div class="container">
     <div class="row">
       <div class="footer-col" id="venstre">
-        <p>SAKURA FESTIVAL</p>
-        <p>info.cph@ch.mofa.go.jp</p>
+        <p>PROGRAM</p>
+        <p>SPONSERS</p>
+        <p>ABOUT</p>
+        <p>CONTACT</p>
       </div>
+
+      <li><a href="/booths">BOOTHS</a></li>
+      <li><a href="/sponsers">SPONSORS</a></li>
+      <img src="../public/logo.svg" alt="" />
+      <li><a href="/about">ABOUT</a></li>
+      <li><a href="/contact">CONTACT</a></li>
+      <li><a href="/single">SINGLE</a></li>
+
       <div class="footer-col" id="midt">
         <div class="some">
-          <a href="https://www.facebook.com/copenhagensakurafestival"><i class="fa fa-facebook"></i></a>
-          <a href="https://www.instagram.com/copenhagensakurafestival/"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.instagram.com/copenhagensakurafestival/"><img src="../public/imgs/instagram.png" alt="" height="50" width="50" /></a>
+          <a href="https://www.facebook.com/copenhagensakurafestival/"><img src="../public/imgs/facebook.png" alt="" height="50" width="50" /></a>
+          <a href="https://www.youtube.com/watch?v=vZGJPqfaOEA/"><img src="../public/imgs/youtube.png" alt="" height="50" width="50" /></a>
         </div>
       </div>
-      <div class="footer-col" id="hojre">
-        <address>
-          Langelinie Park<br />
-          Nordre Toldbod<br />
-          1259 København K
-        </address>
-      </div>
+      <div class="footer-col" id="hojre"></div>
     </div>
   </div>
 </footer>
 
+<!-- <p>info.cph@ch.mofa.go.jp</p> -->
+<!-- <address>
+  Langelinie Park<br />
+  Nordre Toldbod<br />
+  1259 København K
+</address> -->
+
 <style>
   .row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .footer {
@@ -40,8 +50,17 @@
   }
 
   .footer-col {
-    width: 100%;
-    padding: 0 15px;
-    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+  }
+
+  .some {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    margin-left: 25%;
+    margin-right: auto;
+    width: 50%;
   }
 </style>
