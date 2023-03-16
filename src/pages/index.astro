@@ -3,6 +3,7 @@ import "../styles/main.css";
 import Navigation from "../components/Navigation.astro";
 import IndexCards from "../components/IndexCards.astro";
 import Signup from "../components/Signup.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -17,10 +18,14 @@ import Signup from "../components/Signup.astro";
 		<title>Astro</title>
 	</head>
 	<body>
-			<Navigation />
+		<Navigation />
+		
 			<main>
-				<IndexCards />
+			<IndexCards />
             <Signup />
-			</main>
+		    </main>
+
+		<footer><Footer/></footer>
 	</body>
-</html>
+
+</html>	
