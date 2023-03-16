@@ -3,12 +3,16 @@ const {img, text} = Astro.props;
 ---
 
 <section class="grid_1_2">
-    <img src="{img}" alt="">
+    <img src="../public/imgs/acc2117809309e95ccd7d5bd4f63b9cb.jpg" alt="">
     <p>{text}</p>
 </section>
 
 
 <style>
+img {
+    width: 100%;
+}
+
 .grid_1_2 {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -18,6 +22,7 @@ const {img, text} = Astro.props;
     background-color: #710000;
     color: white;
     padding: 25px;
+    margin: 0;
     }
 
 </style>

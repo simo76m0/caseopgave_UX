@@ -1,36 +1,47 @@
+/* Navigation */
+
+.wrapper {
+    margin: 0 auto;
+}
+
 header {
-  background-image: "../public/imgs/9a0d0283c43397c0477e97f6302ee528.jpg";
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+    background-color: #F9EEE8;
+}
+
+.logo img {
+    width: 70%;
+    background-color: #F9EEE8;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    line-height: 100px;
 }
 
 nav a {
-  text-decoration: none;
-  color: black;
-  font-family: "orpheuspro", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-nav img {
-  position: absolute;
-}
-
-nav li {
-  list-style: none;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  background-color: #f9eee8;
-  padding: 5px;
-}
-
-<<<<<<< HEAD
-  p {
-    font-family: "cardo", serif;
+    text-decoration: none;
+    color: black;
+    padding: 36px 10px;
+    font-family: "orpheuspro", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.banner-area {
+    background-image: url("../public/imgs/pic2-kopi.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 75vh;
+}
+
+p {
+  font-family: "cardo", serif;
+  font-weight: 400;
+  font-style: normal;
   }
-  body{
-    background-color: #F9EEE8;
-  }
+  
