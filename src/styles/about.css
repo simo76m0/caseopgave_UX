@@ -26,6 +26,10 @@ form {
     height: 50px;
 }
 
+header {
+  background-image: url(../public/imgs/pic2.jpg);
+}
+
 .about {
     text-align: right;
     font-size: xx-large
