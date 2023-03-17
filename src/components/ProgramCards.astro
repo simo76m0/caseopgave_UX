@@ -1,33 +1,32 @@
 ---
-const {billede, titel, beskrivelse, tid, scene} = Astro.props;
+const { billede, titel, beskrivelse, tid, scene } = Astro.props;
 ---
 
 <article>
-        <img src={billede} alt="artists">
-    <div class="card">
-                <div class="pink">
-        <h3>{tid}Tid</h3>
-        <h2>{titel}Titel</h2>
-        <p>{beskrivelse}Beskrivelse</p>
-        <h3>{scene}Scene</h3>
+  <img src={billede} alt="artists" />
+  <div class="card">
+    <div class="pink">
+      <h3>{tid}</h3>
+      <h2>{titel}</h2>
+      <p>{beskrivelse}</p>
+      <h3>{scene}</h3>
     </div>
     <button>Read more</button>
-</div>
+  </div>
 </article>
 
 <style>
-    .pink{
-    background-color: #F4DFDE;
-    padding:10px;
+  .pink {
+    background-color: #f4dfde;
+    padding: 10px;
     margin-right: 10px;
-}
-.card {
+  }
+  .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
+  }
 
-img {
+  img {
     max-width: 100%;
-    }
-
+  }
 </style>
