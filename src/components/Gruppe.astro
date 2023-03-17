@@ -1,0 +1,9 @@
+---
+import ProgramCards from "./ProgramCards.astro";
+const { program } = Astro.props;
+---
+
+<h1>Gruppe</h1>
+<h1>{program[0]}</h1>
+
+{program.map((program) => <ProgramCards navn={program.navn} description={program.description} tid={program.tid} img={`/public/imgs/${program.img}`} />)}

@@ -4,6 +4,7 @@ import "../styles/about.css";
 import Navigation from "../components/Navigation.astro";
 import ProgramCards from "../components/ProgramCards.astro";
 import Footer from "../components/Footer.astro";
+import Gruppe from "../components/Gruppe.astro";
 import { Debug } from "astro/components";
 
 const url = "https://lytiiyuaxzhfwzaykkar.supabase.co/rest/v1/Program";
@@ -16,6 +17,11 @@ const options = {
 
 const response = await fetch(url, options);
 const data = await response.json();
+
+const main = data.filter((program) => program.scene === 1);
+const second = data.filter((program) => program.scene === 2);
+const lawn = data.filter((program) => program.scene === 3);
+console.log("MAIN DATA", data);
 ---
 
 <html lang="en">
@@ -33,7 +39,11 @@ const data = await response.json();
   <body>
     <Navigation />
     <main>
-      {data.map((program) => <ProgramCards link={"/"} tid={program.tid} img={program.img} />)}
+      <!-- {data.map((program) => <ProgramCards navn={program.navn} description={program.description} tid={program.tid} img={`/public/imgs/${program.img}`} />)} -->
+
+      <Gruppe program={main} scene="main" />
+      <Gruppe program={second} scene="second" />
+      <Gruppe program={lawn} scene="lawn" />
     </main>
     <Footer />
     <style>
