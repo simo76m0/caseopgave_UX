@@ -1,0 +1,31 @@
+---
+const {billede, titel, beskrivelse} = Astro.props;
+---
+
+<article>
+        <img src="../public/imgs/pic3.jpg" alt="artists">
+    <div class="card">
+                <div class="pink">
+        <h2>{titel}Test</h2>
+        <p>{beskrivelse}Test</p>
+    </div>
+    <button>Read more</button>
+</div>
+</article>
+
+<style>
+    .pink{
+    background-color: #F4DFDE;
+    padding:10px;
+    margin-right: 10px;
+}
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img {
+    max-width: 100%;
+    }
+
+</style>

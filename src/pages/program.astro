@@ -1,0 +1,38 @@
+---
+import "../styles/main.css";
+import "../styles/about.css";
+import Navigation from "../components/Navigation.astro";
+import ProgramCards from "../components/ProgramCards.astro";
+import Footer from "../components/Footer.astro";
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="robots" content="noindex">
+		<link rel="stylesheet" href="https://use.typekit.net/aqy4phb.css">
+		<link rel="stylesheet" href="https://use.typekit.net/aqy4phb.css">
+		<title>Astro</title>
+	</head>
+	<body>
+		<Navigation />
+	<main>
+        <section class="grid_1-1-1">
+            <ProgramCards />
+            <ProgramCards />
+            <ProgramCards />
+        </section>
+	</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+    .grid_1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+</style>
