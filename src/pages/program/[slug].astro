@@ -1,0 +1,36 @@
+---
+export async function getStaticPaths() {
+  const url = "https://lytiiyuaxzhfwzaykkar.supabase.co/rest/v1/Program";
+
+  const options = {
+    headers: {
+      apikey:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx5dGlpeXVheHpoZnd6YXlra2FyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg3ODY2MDgsImV4cCI6MTk5NDM2MjYwOH0.qA8kHlhJamX17bRpM-4rETSyqjgAIxwx_spo7qHeWuo",
+    },
+  };
+
+  const response = await fetch(url, options);
+  const data = await response.json();
+
+  return data.map((program) => ({
+    params: { slug: program.slug },
+    props: { program },
+  }));
+}
+
+const { program } = Astro.props;
+---
+
+<main>
+  <article class="grid">
+    <img src={`/public/imgs/${program.img}`} alt="" />
+    <div class="tekst">
+      <h3>{program.navn}</h3>
+      <h3>{program.description}</h3>
+      <p>{program.text}</p>
+    </div>
+  </article>
+  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
+  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
+  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
+</main>

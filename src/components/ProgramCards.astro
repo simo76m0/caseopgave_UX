@@ -1,19 +1,21 @@
 ---
-const { img, navn, description, tid, scene } = Astro.props;
+const { img, navn, description, tid, scene, link } = Astro.props;
 ---
 
-<article>
-  <img src={img} alt="artists" />
-  <div class="card">
-    <div class="pink">
-      <h3>{tid}</h3>
-      <h2>{navn}</h2>
-      <p>{description}</p>
-      <h3>{scene}</h3>
+<a href={link}>
+  <article>
+    <img src={img} alt="artists" />
+    <div class="card">
+      <div class="pink">
+        <h3>{tid}</h3>
+        <h2>{navn}</h2>
+        <p>{description}</p>
+        <h3>{scene}</h3>
+      </div>
+      <button>Read more</button>
     </div>
-    <button>Read more</button>
-  </div>
-</article>
+  </article>
+</a>
 
 <style>
   .pink {
