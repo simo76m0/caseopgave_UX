@@ -7,25 +7,24 @@ import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="robots" content="noindex">
-		<meta name="generator" content={Astro.generator} />
-		<link rel="stylesheet" href="https://use.typekit.net/aqy4phb.css">
-	
-		<title>Astro</title>
-	</head>
-	<body>
-		<Navigation />
-		
-			<main>
-			<IndexCards />
-            <Signup />
-		    </main>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="https://use.typekit.net/aqy4phb.css" />
 
-		<footer><Footer/></footer>
-	</body>
+    <title>Astro</title>
+  </head>
+  <body>
+    <Navigation />
 
-</html>	
+    <main>
+      <IndexCards />
+      <Signup />
+    </main>
+
+    <footer><Footer /></footer>
+  </body>
+</html>
