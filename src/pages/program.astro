@@ -40,10 +40,36 @@ console.log("MAIN DATA", data);
     <Navigation />
     <main>
       <!-- {data.map((program) => <ProgramCards navn={program.navn} description={program.description} tid={program.tid} img={`/public/imgs/${program.img}`} />)} -->
-
-      <Gruppe program={main} scene="main" />
-      <Gruppe program={second} scene="second" />
-      <Gruppe program={lawn} scene="lawn" />
+      <h1>Saturday</h1>
+      <section class="grid_1-1-1">
+        <div>
+          <h1>Main stage</h1>
+          <Gruppe program={main} scene="main" />
+        </div>
+        <div>
+          <h1>Second stage</h1>
+          <Gruppe program={second} scene="second" />
+        </div>
+        <div>
+          <h1>On the lawn</h1>
+          <Gruppe program={lawn} scene="lawn" />
+        </div>
+      </section>
+      <h1>Sunday</h1>
+      <section class="grid_1-1-1">
+        <div>
+          <h1>Main stage</h1>
+          <Gruppe program={main} scene="main" />
+        </div>
+        <div>
+          <h1>Second stage</h1>
+          <Gruppe program={second} scene="second" />
+        </div>
+        <div>
+          <h1>On the lawn</h1>
+          <Gruppe program={lawn} scene="lawn" />
+        </div>
+      </section>
     </main>
     <Footer />
     <style>
