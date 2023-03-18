@@ -1,0 +1,95 @@
+---
+---
+
+<li>
+  <article class="grid">
+    <img src="../public/imgs/pic3.jpg" alt="" />
+    <div class="tekst">
+      <h1>We’d love to hear from you!</h1>
+      <label for="first-name">First Name</label>
+      <input placeholder="fx Kim" id="first-name" name="fname" type="text" />
+
+      <label for="first-name">Last name</label>
+      <input
+        placeholder="fx Nielsen"
+        id="first-name"
+        name="fname"
+        type="text"
+      />
+
+      <label for="email">E-mail</label>
+      <input
+        placeholder="fx Kim1234@email.com"
+        id="email"
+        name="email"
+        type="email"
+      />
+
+      <label for="tekst">Text</label>
+      <textarea id="tekst"></textarea>
+      <button type="submit"> Submit</button>
+    </div>
+  </article>
+</li>
+
+<section class="info">
+  <img class="img" src="../public/nr.png" alt="nr" />
+  <img class="img" src="../public/mail.png" alt="" />
+  <img class="img" src="../public/placering.png" alt="" />
+  <p>(+45) 3345 5121</p>
+  <p>info.cph@ch.mofa.go.jp</p>
+  <p>Langelinie Park Nordre Toldbod 1259 København K</p>
+</section>
+
+<style>
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5%;
+    justify-content: center;
+  }
+
+  .img {
+    width: 50%;
+    align-self: center;
+  }
+
+  h1 {
+    background-color: #710000;
+    color: rgb(255, 255, 255);
+    padding: 2%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid {
+    padding: 2rem;
+    /* background: #d3c8b6; */
+    border-radius: 8px;
+    background-color: #d3c1b643;
+  }
+  textarea {
+    width: 65%;
+    padding: 5%;
+  }
+
+  label,
+  input,
+  button {
+    display: block;
+
+    padding: 2%;
+  }
+
+  input {
+    width: 70%;
+  }
+
+  button {
+    justify-self: center;
+    margin-top: 20px;
+    width: 70%;
+  }
+</style>

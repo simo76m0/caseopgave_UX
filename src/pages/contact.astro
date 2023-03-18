@@ -1,6 +1,7 @@
 ---
 import "../styles/main.css";
 import Navigation from "../components/Navigation.astro";
+import ContactCards from "../components/ContactCards.astro";
 import Footer from "../components/Footer.astro";
 ---
 
@@ -16,10 +17,11 @@ import Footer from "../components/Footer.astro";
     <title>Astro</title>
   </head>
   <body>
-    <header>
-      <Navigation />
-    </header>
+    <Navigation />
 
+    <main>
+      <ContactCards />
+    </main>
     <Footer />
   </body>
 </html>
