@@ -1,4 +1,6 @@
 ---
+import Navigation from "../../components/Navigation.astro";
+
 export async function getStaticPaths() {
   const url = "https://lytiiyuaxzhfwzaykkar.supabase.co/rest/v1/Program";
 
@@ -21,6 +23,7 @@ export async function getStaticPaths() {
 const { program } = Astro.props;
 ---
 
+<Navigation />
 <main>
   <article class="grid">
     <img src={`/public/imgs/${program.img}`} alt="" />
@@ -34,3 +37,18 @@ const { program } = Astro.props;
   <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
   <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
 </main>
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .tekst {
+    background-color: #710000;
+    color: white;
+    padding: 10%;
+    margin: 10%;
+  }
+</style>
