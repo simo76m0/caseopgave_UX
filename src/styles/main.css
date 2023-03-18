@@ -11,6 +11,7 @@ h4 {
   font-family: "orpheuspro", serif;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
 }
 
 button {
@@ -65,4 +66,5 @@ p {
   font-family: "cardo", serif;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
 }
