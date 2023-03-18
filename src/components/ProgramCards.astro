@@ -3,10 +3,10 @@ const { img, navn, description, tid, scene, link } = Astro.props;
 ---
 
 <a href={link}>
-  <article>
+  <article class="card">
     <img src={img} alt="artists" />
-    <div class="card">
-      <div class="pink">
+    <div class="text">
+      <div class="background">
         <h3>{tid}</h3>
         <h2>{navn}</h2>
         <p>{description}</p>
@@ -18,17 +18,46 @@ const { img, navn, description, tid, scene, link } = Astro.props;
 </a>
 
 <style>
-  .pink {
-    background-color: #f4dfde;
-    padding: 10px;
-    margin-right: 10px;
+  a {
+    text-decoration: none;
+    color: black;
   }
-  .card {
+  .background {
+    background-color: #f4dfde;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  button {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .text {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    text-align: center;
   }
 
-  img {
-    max-width: 100%;
+  h2 {
+    font-weight: bolder;
   }
+
+  p {
+    color: #710000;
+  }
+
+img {
+  width: 100%;
+  margin-top: 10px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+img:hover {
+  width: 100%;
+  margin-top: 10px;
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
 </style>

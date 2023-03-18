@@ -40,43 +40,66 @@ console.log("MAIN DATA", data);
     <Navigation />
     <main>
       <!-- {data.map((program) => <ProgramCards navn={program.navn} description={program.description} tid={program.tid} img={`/public/imgs/${program.img}`} />)} -->
-      <h1>Saturday</h1>
+      <h1>SATURDAY</h1>
       <section class="grid_1-1-1">
-        <div>
-          <h1>Main stage</h1>
+        <div class="sektion">
+          <h2>Main stage</h2>
           <Gruppe program={main} scene="main" />
         </div>
-        <div>
-          <h1>Second stage</h1>
+        <div class="sektion">
+          <h2>Second stage</h2>
           <Gruppe program={second} scene="second" />
         </div>
-        <div>
-          <h1>On the lawn</h1>
+        <div class="sektion">
+          <h2>On the lawn</h2>
           <Gruppe program={lawn} scene="lawn" />
         </div>
       </section>
-      <h1>Sunday</h1>
+      <h1>SUNDAY</h1>
       <section class="grid_1-1-1">
-        <div>
-          <h1>Main stage</h1>
+        <div class="sektion">
+          <h2>Main stage</h2>
           <Gruppe program={main} scene="main" />
         </div>
-        <div>
-          <h1>Second stage</h1>
+        <div class="sektion">
+          <h2>Second stage</h2>
           <Gruppe program={second} scene="second" />
         </div>
-        <div>
-          <h1>On the lawn</h1>
+        <div class="sektion">
+          <h2>On the lawn</h2>
           <Gruppe program={lawn} scene="lawn" />
         </div>
       </section>
     </main>
     <Footer />
-    <style>
-      .grid_1-1-1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-      }
+<style>
+  
+  body {
+    background-color: #F9EEE8;
+  }
+  .grid_1-1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 15px;
+      width: 85%;
+      margin: 0 auto;
+  }
+  .sektion {
+      border: 1px solid black;
+      padding: 20px;
+
+  }
+  h1 {
+    text-align: center;
+    font-size: 75px;
+    margin: 0;
+  }
+  h2 {
+    background-color: #710000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
     </style>
   </body>
 </html>

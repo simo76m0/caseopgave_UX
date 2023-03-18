@@ -5,18 +5,21 @@
 <article >
     
         <div class="card1">
-            <img src="../public/imgs/pic3.jpg" alt="artists">
+            <img src="../public/imgs/pic3.jpg" alt="artists" width="400" height="490">
             <div class="card">
                 <div class="pink">
         <h2>Artists</h2>
         <p>青龍窯 椀形茶碗</p></div>
     <button>Read more</button>
 </div>
+<div class="box">
+    <h1>行</h1>
+</div>
     </div>
 
     <div class="card2_3">
     <div class="card2">
-        <img src="../public/imgs/pic10.jpg" alt="blomster">
+        <img src="../public/imgs/pic10.jpg" alt="blomster" width="300" height="295">
         <div class="card">
             <div class="pink">
         <h2>Program</h2>
@@ -26,7 +29,7 @@
     </div>
 
     <div class="card3">
-        <img src="../public/imgs/pic6.jpg" alt="skaal">
+        <img src="../public/imgs/pic6.jpg" alt="skaal" width="300" height="295">
         <div class="card">
             <div class="pink">
         <h2>Art</h2>
@@ -36,12 +39,15 @@
 </div>
 
     <div class="card4">
-        <img src="../public/imgs/pic7.jpg" alt="vifte">
+        <img src="../public/imgs/pic7.jpg" alt="vifte" width="400" height="490">
         <div class="card">
             <div class="pink">
         <h2>Booths</h2>
         <p>青龍窯 椀形茶碗</p></div>
         <button>Read more</button> 
+    </div>
+    <div class="box">
+        <h1>苦</h1>
     </div>
     </div>
     
@@ -51,48 +57,56 @@
 article{
     display: flex;
     justify-content:space-around;
-    padding: 5px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 40px;
  
 }
-
-
-.card1, .card4{
-    width: 30%;
-    padding: 10px;
-}
-.card2_3{
-    width: 30%;
-    padding: 10px;
+.box{
+    width: 100%;
+    height: 18%;
+    background-color: #710000;
     
+}
+.box h1{
+    font-size: 100px;
+    margin-left: 160px;
+    color: #F9EEE8;
+}
+
+.card2_3{
+    padding-left: 10px;
+    padding-right: 10px;  
 }
 .pink{
     background-color: #F4DFDE;
-    padding:10px;
+    padding:5px;
     margin-right: 10px;
 }
+
 .card{
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-padding: 5px;
-border-radius: 5px;
-
+    padding: 5px;
+    
 }
 img{
     width: 100%;
     border-radius: 5px;
     padding-top: 10px;
+   
   
 }
-
 p{
     color: #710000;
 }
 button{
-    padding: 1rem;
+    width: 60%;
+    height: 40%;
+    margin: 30px;
     border-radius: 8px;
     background-color: #F9EEE8;
-    margin-top: 10px;
+   
     }
     button:hover{
         box-shadow: 0 0 2px 1px #710000;
