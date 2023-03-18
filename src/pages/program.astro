@@ -42,7 +42,15 @@ console.log("MAIN DATA", data);
     <main>
       <!-- {data.map((program) => <ProgramCards navn={program.navn} description={program.description} tid={program.tid} img={`/public/imgs/${program.img}`} />)} -->
       <h1>SATURDAY</h1>
-      <section class="grid_1-1-1">
+      <p>The Copenhagen Sakura Festival is well known for featuring many Japanese cultural performances.
+Every year, you will experience both traditional and modern Japanese culture through the performances on stage, amidst the blossoming Sakura trees.</p>
+<div class="filtrering">
+<button class="filter">DATE</button>
+<button class="filter">TIME</button> 
+<button class="filter">ACTIVITY</button>
+<button class="filter">ARTIST</button> 
+</div>      
+<section class="grid_1-1-1">
         <div class="sektion">
           <h2>Main stage</h2>
           <Gruppe program={main} scene="main" />
@@ -60,7 +68,15 @@ console.log("MAIN DATA", data);
         </div>
       </section>
       <h1>SUNDAY</h1>
-      <section class="grid_1-1-1">
+      <p>The Copenhagen Sakura Festival is well known for featuring many Japanese cultural performances.
+Every year, you will experience both traditional and modern Japanese culture through the performances on stage, amidst the blossoming Sakura trees.</p>
+<div class="filtrering">
+<button class="filter">DATE</button>
+<button class="filter">TIME</button> 
+<button class="filter">ACTIVITY</button>
+<button class="filter">ARTIST</button> 
+</div>         
+<section class="grid_1-1-1">
         <div class="sektion">
           <h2>Main stage</h2>
           <Gruppe program={main} scene="main" />
@@ -83,6 +99,12 @@ console.log("MAIN DATA", data);
   
   body {
     background-color: #F9EEE8;
+  }
+
+  p {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 25px;
   }
   .grid_1-1-1 {
       display: grid;
@@ -108,6 +130,21 @@ console.log("MAIN DATA", data);
     text-align: center;
     margin: 0;
   }
+
+  .filter {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f4dfde;
+    border: none;
+  }
+
+  .filtrering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
     </style>
   </body>
 </html>
