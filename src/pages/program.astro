@@ -6,6 +6,7 @@ import ProgramCards from "../components/ProgramCards.astro";
 import Footer from "../components/Footer.astro";
 import Gruppe from "../components/Gruppe.astro";
 import { Debug } from "astro/components";
+import MoreBtn from "../components/MoreBtn.astro";
 
 const url = "https://lytiiyuaxzhfwzaykkar.supabase.co/rest/v1/Program";
 
@@ -45,14 +46,17 @@ console.log("MAIN DATA", data);
         <div class="sektion">
           <h2>Main stage</h2>
           <Gruppe program={main} scene="main" />
+          <MoreBtn />
         </div>
         <div class="sektion">
           <h2>Second stage</h2>
           <Gruppe program={second} scene="second" />
+          <MoreBtn />
         </div>
         <div class="sektion">
           <h2>On the lawn</h2>
           <Gruppe program={lawn} scene="lawn" />
+          <MoreBtn />
         </div>
       </section>
       <h1>SUNDAY</h1>
@@ -60,14 +64,17 @@ console.log("MAIN DATA", data);
         <div class="sektion">
           <h2>Main stage</h2>
           <Gruppe program={main} scene="main" />
+          <MoreBtn />
         </div>
         <div class="sektion">
           <h2>Second stage</h2>
           <Gruppe program={second} scene="second" />
+          <MoreBtn />
         </div>
         <div class="sektion">
           <h2>On the lawn</h2>
           <Gruppe program={lawn} scene="lawn" />
+          <MoreBtn />
         </div>
       </section>
     </main>
@@ -99,6 +106,7 @@ console.log("MAIN DATA", data);
     color: white;
     padding: 15px;
     text-align: center;
+    margin: 0;
   }
     </style>
   </body>
