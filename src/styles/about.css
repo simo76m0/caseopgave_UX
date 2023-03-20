@@ -1,6 +1,6 @@
 .grid_2_1 {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
 }
 
 form {
@@ -24,6 +24,7 @@ form {
 
 .grid_2_1 input {
     height: 50px;
+    width: 500px;
 }
 
 .about {

@@ -26,7 +26,7 @@ const { program } = Astro.props;
 <Navigation />
 <main>
   <article class="grid">
-    <img src={`/public/imgs/${program.img}`} alt="" />
+    <img src={`/public/imgs/${program.single}`} alt="" />
     <div class="tekst">
       <h3>{program.navn}</h3>
       <h3>{program.description}</h3>
@@ -51,4 +51,9 @@ const { program } = Astro.props;
     padding: 10%;
     margin: 10%;
   }
+
+  /* img {
+    width: 100%;
+    height: auto;
+  } */
 </style>
