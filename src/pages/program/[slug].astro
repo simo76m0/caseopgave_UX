@@ -1,4 +1,5 @@
 ---
+import Footer from "../../components/Footer.astro";
 import Navigation from "../../components/Navigation.astro";
 export async function getStaticPaths() {
   const url = "https://lytiiyuaxzhfwzaykkar.supabase.co/rest/v1/Program";
@@ -25,30 +26,47 @@ const { program } = Astro.props;
 <Navigation />
 <main>
   <article class="grid">
-    <img src={`/public/imgs/${program.single}`} alt="" />
+    <img src={`/public/imgs/${program.single}`} class="singleView" alt="" />
     <div class="tekst">
       <h3>{program.navn}</h3>
-      <h3>{program.description}</h3>
+      <h2>{program.description}</h2>
       <p>{program.text}</p>
     </div>
+    <div class="imgSingle">
+  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
+  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
+  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
+    </div>
   </article>
-  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
-  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
-  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
+      <Footer />
 </main>
 
 <style>
   .grid {
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
   }
 
+  .tekst p {
+    line-height: 35px;
+  }
+
+  .tekst h3 {
+    font-size: 30px;
+  }
+  .grid .singleView {
+    width: 100%;
+  }
+
+  .grid .imgSingle {
+    padding: 10px;
+    margin: 5px;
+  } 
   .tekst {
     background-color: #710000;
     color: white;
     padding: 10%;
-    margin: 10%;
   }
 
   /* img {
