@@ -34,11 +34,14 @@ const { program } = Astro.props;
       <p>{program.text}</p>
     </div>
     <div class="imgSingle">
-  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
-  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
-  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
+  <img src="../public/imgs/pic1.jpg" alt="" height="175" width="175" />
+  <img src="../public/imgs/pic1.jpg" alt="" height="175" width="175" />
+  <img src="../public/imgs/pic1.jpg" alt="" height="175" width="175" />
+  <img src="../public/imgs/pic1.jpg" alt="" height="175" width="175" />
     </div>
+    <div class="Btn">
     <button>Learn more about the artist here</button>
+    </div>
   </article>
       <Footer />
 </main>
@@ -52,6 +55,7 @@ const { program } = Astro.props;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 10px;
+    gap: 10px;
   }
 
   .tekst p {
@@ -66,8 +70,9 @@ const { program } = Astro.props;
   }
 
   .grid .imgSingle {
-    padding: 10px;
-    margin: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
   } 
   .tekst {
     background-color: #710000;
@@ -83,10 +88,12 @@ button {
     margin: 0;
     width: 500px;
     height: 50px;
-    background-color: #F9EEE8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 </style>
