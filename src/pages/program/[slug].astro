@@ -34,19 +34,20 @@ const { program } = Astro.props;
       <p>{program.text}</p>
     </div>
     <div class="imgSingle">
-  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
-  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
-  <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
+      <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
+      <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
+      <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
     </div>
-    <button>Learn more about the artist here</button>
+    <div>
+      <button>Learn more about the artist here</button>
+    </div>
   </article>
-      <Footer />
+  <Footer />
 </main>
 
 <style>
-
   body {
-    background-color: #F9EEE8;
+    background-color: #f9eee8;
   }
   .grid {
     display: grid;
@@ -68,14 +69,14 @@ const { program } = Astro.props;
   .grid .imgSingle {
     padding: 10px;
     margin: 5px;
-  } 
+  }
   .tekst {
     background-color: #710000;
     color: white;
     padding: 10%;
   }
 
-button {
+  button {
     font-family: "cardo", serif;
     font-weight: 400;
     font-style: normal;
@@ -83,10 +84,23 @@ button {
     margin: 0;
     width: 500px;
     height: 50px;
-    background-color: #F9EEE8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    background-color: #f9eee8;
 
+    justify-self: center;
+  }
+
+  @media (max-width: 700px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .imgSingle {
+      grid-template-columns: 1fr;
+
+      justify-self: center;
+    }
+    button {
+      justify-self: center;
+    }
+  }
 </style>
