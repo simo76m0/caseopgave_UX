@@ -102,13 +102,25 @@ const { program } = Astro.props;
       grid-template-columns: 1fr;
     }
 
-    .imgSingle {
-      grid-template-columns: 1fr;
-
-      justify-self: center;
+ .grid .imgSingle {
+display: grid;
+grid-template-columns: 1fr 1fr;
     }
     button {
       justify-self: center;
     }
+
+img {
+  width: 100%;
+  order: 1;
+}
+
+.imgSingle {
+  order: 1;
+}
+
+ .Btn {
+  order: 1;
+ }
   }
 </style>
