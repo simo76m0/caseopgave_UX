@@ -23,11 +23,11 @@ import Footer from "../components/Footer.astro";
     <Navigation />
 
     <main>
-      <h1>SAKURA FESTIVAL 2023</h1>
+      <h1>SAKURA FESTIVAL</h1>
       <p>The Copenhagen Sakura Festival is well known for featuring many Japanese cultural performances. Every year, you will experience both traditional and modern Japanese culture through the performances on stage, amidst the blossoming Sakura trees.</p>
       <IndexCards />
       <h2>Sign up for newsletter</h2>
-    <p>
+                <p>
       Sign up to receive information about Sakura Festival and get all the
       latest updates about the program, booths, sponsors and other events.
     </p>
@@ -44,20 +44,27 @@ import Footer from "../components/Footer.astro";
   h1{
     text-align: center;
     padding-top: 30px;
-    font-size: 40px;
+    font-size: 60px;
   }
   h2{
     text-align: center;
-    padding: 30px;
+    padding-top: 15px;
+    font-size: 40px;
   }
-  p{
+  p {
     max-width: 50%;
     margin: 0 auto;
-    padding-bottom:  30px;
+    padding: 30px;
   }
   body {
     background-color: #F9EEE8;
   }
   
+@media (max-width: 700px) {
+
+  p {
+    max-width: 100%;
+  }
+}
     
 </style>
