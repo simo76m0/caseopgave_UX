@@ -27,7 +27,7 @@ const { program } = Astro.props;
 <Navigation />
 <main>
   <article class="grid">
-    <img src={`/public/imgs/${program.single}`} class="singleView" alt="" />
+    <img src={`/imgs/${program.single}`} class="singleView" alt="" />
     <div class="tekst">
       <h3>{program.navn}</h3>
       <h2>{program.description}</h2>
@@ -37,10 +37,10 @@ const { program } = Astro.props;
       <button>Learn more about the artist here</button>
     </div>
     <div class="imgSingle">
-      <img src="../public/imgs/pic1.jpg" alt="" height="175" width="175" />
-      <img src="../public/imgs/pic2.jpg" alt="" height="175" width="175" />
-      <img src="../public/imgs/pic8.jpg" alt="" height="175" width="175" />
-      <img src="../public/imgs/pic6.jpg" alt="" height="175" width="175" />
+      <img src="/imgs/pic1.jpg" alt="" height="175" width="175" />
+      <img src="/imgs/pic2.jpg" alt="" height="175" width="175" />
+      <img src="/imgs/pic8.jpg" alt="" height="175" width="175" />
+      <img src="/imgs/pic6.jpg" alt="" height="175" width="175" />
     </div>
   </article>
   <Footer />
