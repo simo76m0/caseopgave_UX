@@ -33,23 +33,29 @@ const { program } = Astro.props;
       <h2>{program.description}</h2>
       <p>{program.text}</p>
     </div>
-        <div class="Btn">
-    <button>Learn more about the artist here</button>
+    <div class="Btn">
+      <button>Learn more about the artist here</button>
     </div>
     <div class="imgSingle">
-  <img src="../public/imgs/pic1.jpg" alt="" height="175" width="175" />
-  <img src="../public/imgs/pic2.jpg" alt="" height="175" width="175" />
-  <img src="../public/imgs/pic8.jpg" alt="" height="175" width="175" />
-  <img src="../public/imgs/pic6.jpg" alt="" height="175" width="175" />
+      <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
+      <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
+      <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
+    </div>
+    <div>
+      <button>Learn more about the artist here</button>
+
+      <img src="../public/imgs/pic1.jpg" alt="" height="175" width="175" />
+      <img src="../public/imgs/pic2.jpg" alt="" height="175" width="175" />
+      <img src="../public/imgs/pic8.jpg" alt="" height="175" width="175" />
+      <img src="../public/imgs/pic6.jpg" alt="" height="175" width="175" />
     </div>
   </article>
-      <Footer />
+  <Footer />
 </main>
 
 <style>
-
   body {
-    background-color: #F9EEE8;
+    background-color: #f9eee8;
   }
   .grid {
     display: grid;
@@ -73,28 +79,43 @@ const { program } = Astro.props;
     display: flex;
     justify-content: center;
     gap: 10px;
-  } 
+  }
   .tekst {
     background-color: #710000;
     color: white;
     padding: 10%;
   }
 
-button {
+  button {
     font-family: "cardo", serif;
     font-weight: 400;
     font-style: normal;
-    font-size:20px;
+    font-size: 20px;
     margin: 0;
     width: 500px;
     height: 50px;
-}
+    background-color: #f9eee8;
+  }
 
-.Btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f4dfde;
-}
+  .Btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4dfde;
+  }
 
+  @media (max-width: 700px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .imgSingle {
+      grid-template-columns: 1fr;
+
+      justify-self: center;
+    }
+    button {
+      justify-self: center;
+    }
+  }
 </style>
