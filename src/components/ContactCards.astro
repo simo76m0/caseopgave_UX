@@ -7,11 +7,11 @@
     <div class="tekst">
       <h1>We’d love to hear from you!</h1>
       <label for="first-name">First Name</label>
-      <input placeholder="fx Kim" id="first-name" name="fname" type="text" />
+      <input id="first-name" name="fname" type="text" />
 
       <label for="first-name">Last name</label>
       <input
-        placeholder="fx Nielsen"
+        
         id="first-name"
         name="fname"
         type="text"
@@ -19,13 +19,13 @@
 
       <label for="email">E-mail</label>
       <input
-        placeholder="fx Kim1234@email.com"
+        
         id="email"
         name="email"
         type="email"
       />
 
-      <label for="tekst">Text</label>
+      <label for="tekst">Write your message here</label>
       <textarea id="tekst"></textarea>
       <button type="submit"> Submit</button>
     </div>
@@ -89,15 +89,19 @@
   }
   textarea {
     width: 65%;
-    padding: 5%;
+    padding: 20px;
+    margin-top: 10px;
   }
 
   label,
   input,
   button {
     display: block;
-
-    padding: 2%;
+    margin-top: 15px;
+    padding-top: 10px;
+    font-family: "cardo", serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   input {

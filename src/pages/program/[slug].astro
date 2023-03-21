@@ -33,6 +33,9 @@ const { program } = Astro.props;
       <h2>{program.description}</h2>
       <p>{program.text}</p>
     </div>
+    <div class="Btn">
+      <button>Learn more about the artist here</button>
+    </div>
     <div class="imgSingle">
       <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
       <img src="../public/imgs/pic1.jpg" alt="" height="200" width="200" />
@@ -40,6 +43,11 @@ const { program } = Astro.props;
     </div>
     <div>
       <button>Learn more about the artist here</button>
+
+      <img src="../public/imgs/pic1.jpg" alt="" height="175" width="175" />
+      <img src="../public/imgs/pic2.jpg" alt="" height="175" width="175" />
+      <img src="../public/imgs/pic8.jpg" alt="" height="175" width="175" />
+      <img src="../public/imgs/pic6.jpg" alt="" height="175" width="175" />
     </div>
   </article>
   <Footer />
@@ -53,6 +61,7 @@ const { program } = Astro.props;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 10px;
+    gap: 10px;
   }
 
   .tekst p {
@@ -67,8 +76,9 @@ const { program } = Astro.props;
   }
 
   .grid .imgSingle {
-    padding: 10px;
-    margin: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
   }
   .tekst {
     background-color: #710000;
@@ -80,13 +90,18 @@ const { program } = Astro.props;
     font-family: "cardo", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: 20px;
     margin: 0;
     width: 500px;
     height: 50px;
     background-color: #f9eee8;
+  }
 
-    justify-self: center;
+  .Btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4dfde;
   }
 
   @media (max-width: 700px) {
