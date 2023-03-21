@@ -2,12 +2,13 @@
 ---
 
 <div class="box-area">
+  <img src="../public/logo.png" class="hideDesktop"/>
   <header>
     <div class="wrapper">
       <nav>
         <a href="/index.html">HOME</a>
         <a href="/program">PROGRAM</a>
-        <div class="logo">
+        <div class="logo hideMobil">
           <a href="/index.html">
             <img src="../public/logo.png" />
           </a>
@@ -30,6 +31,11 @@
     font-style: normal;
     margin: 0;
   }
+
+    .hideDesktop {
+      display: none;
+    }
+
   button {
     font-family: "cardo", serif;
     font-weight: 400;
@@ -92,5 +98,17 @@
     .logo img {
       width: 100px;
     }
+
+    .hideMobil {
+      display: none;
+    }
+
+    .hideDesktop {
+      display: block;
+      margin: 0 auto;
+      width: 25%;
+      margin-top: 25px;
+    }
+
   }
 </style>
